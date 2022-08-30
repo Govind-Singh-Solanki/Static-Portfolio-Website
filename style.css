@@ -340,11 +340,10 @@ a
     background-position: center;
 }
 
-.certibox:nth-child(3)
+/* .certibox:nth-child(3)
 {
-    background-image: url('Media/GFG\ C++\ Certificate.jpg');
-    background-position: center;
-}
+    
+} */
 
 .certibox:nth-child(4)
 {
