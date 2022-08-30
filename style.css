@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 *
 {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 }
 
 /* Profile Section  */
@@ -88,7 +90,65 @@ a
 
 .about
 {
+    padding: 0;
     width: 45vw;
+    /* height: 40%; */
+    display: flex;
+    flex-direction: column;
+}
+
+.name
+{
+    font-size: 350%;
+    font-family: Helvetica;
+    font-weight: 700;
+    /* background-image: linear-gradient(to right, #ff512f, #f09819); */
+    /* background: linear-gradient(to right, #F45C43, #EB3349); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+
+.job
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 150%;
+    color: rgb(3, 255, 255);
+    padding: 0 10px;
+}
+
+.aboutme
+{
+    padding: 20px 10px;
+}
+
+.social
+{
+    padding: 10px;
+    color: rgb(180, 180, 180);
+    font-size: 120%;
+}
+
+.connect
+{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.sociallinks
+{
+    padding: 10px;
+    font-size: 20px;
+}
+
+.a
+{
+    transition: transform 1s ease-in;
+}
+
+.a :hover
+{
+    transform: scale(1.5);
 }
 
 .profile
@@ -96,12 +156,356 @@ a
     height: 450px;
     width: 450px;
     border-radius: 50%;
+    /* display: flex; */
+    /* justify-content: center; */
+    background-image: url('Media/myself.jpg');
+    background-position: center;
+    background-size: cover;
     overflow: hidden;
     box-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
 .projects
 {
+    height: 70vh;
     width: 80vw;
-   
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+
+.headingProject
+{
+    width: auto;
+}
+
+.myProject
+{
+    text-align: left;
+    font-size: 3rem;
+    /* padding: 0px 2%; */
+    font-weight: 200;
+    text-decoration: underline;
+}
+
+.projectContent
+{
+    /* height: 60vh; */
+    width: 100%;
+    padding: 20px 0;
+    background-color: rgb(60, 59, 59);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.project
+{
+    height: 250px;
+    width: 23%;
+    /* padding: 10px; */
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    /* border: 2px solid black; */
+}
+
+.project_detail
+{
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    width: 100%;
+    min-height: 0;
+    padding: 10px;
+    transition: .5s;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.link
+{
+    font-size: 14px;
+    font-family: 'Segoe UI';
+    font-weight: 100;
+}
+
+.link:hover
+{
+    text-decoration: underline;
+}
+
+.project_detail:hover
+{
+    min-height: 40%;
+}
+
+.project:nth-child(1)
+{
+    background-image: url('Media/food1.jpg');
+    background-position: center;
+}
+
+.project:nth-child(2)
+{
+    background-image: url('Media/tictactoe.jpg');
+    background-position: center;
+}
+
+.project:nth-child(3)
+{
+    background-image: url('Media/webd.jpg');
+    background-position: center;
+}
+
+.project:nth-child(4)
+{
+    background-image: url('Media/portfolio.jpg');
+    background-position: center;
+}
+
+.certifications
+{
+    height: 100vh;
+    width: 80vw;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    row-gap: 50px;
+    /* column-gap: 50px; */
+}
+
+.headingCertification
+{
+    width: auto;
+}
+
+.myCertifications
+{
+    text-align: left;
+    font-size: 3rem;
+    font-weight: 200;
+    text-decoration: underline;
+}
+
+.certificationContent
+{
+    /* height: 60vh; */
+    width: 100%;
+    padding: 20px 0;
+    background-color: rgb(60, 59, 59);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    row-gap: 30px;
+}
+
+.certibox
+{
+    height: 250px;
+    width: 30%;
+    /* padding: 10px; */
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+}
+
+.certification_detail
+{
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    width: 100%;
+    min-height: 0;
+    padding: 10px;
+    transition: .5s;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.certification_detail:hover
+{
+    min-height: 40%;
+}
+
+.certibox:nth-child(1)
+{
+    background-image: url('Media/Front\ End\ Development\ Coursera.jpg');
+    background-position: center;
+}
+
+.certibox:nth-child(2)
+{
+    background-image: url('Media/DSA\ Certificate_pages-to-jpg-0001.jpg');
+    background-position: center;
+}
+
+.certibox:nth-child(3)
+{
+    background-image: url('Media/GFG\ C++\ Certificate_page-0001.jpg');
+    background-position: center;
+}
+
+.certibox:nth-child(4)
+{
+    background-image: url('Media/LetsUpgrade\ HTML\ &\ CSS_page-0001.jpg');
+    background-position: center;
+}
+
+.certibox:nth-child(5)
+{
+    background-image: url('Media/LetsUpgrade_JS_page-0001.jpg');
+    background-position: center;
+}
+
+.certibox:nth-child(6)
+{
+    background-image: url('Media/CodeKaro\ BootCamp_pages-to-jpg-0001.jpg');
+    background-position: center;
+}
+
+.achievements
+{
+    height: 80vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    padding: 70px 0;
+}
+
+.achiheading
+{
+    width: auto;
+}
+
+.myAchi
+{
+    text-align: left;
+    font-size: 3rem;
+    font-weight: 200;
+    text-decoration: underline;
+}
+
+.achiContent
+{
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(60, 59, 59);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    row-gap: 30px;
+    column-gap: 20px;
+}
+
+.achiBox
+{
+    border: 2px solid black;
+    height: 250px;
+    width: 49%;
+    display: flex;
+    /* background-color: black; */
+    /* padding: 15px; */
+    /* column-gap: 20px; */
+}
+
+.achiImg1
+{
+    height: 100%;
+    width: 50%;
+    background-image: url('Media/cricket.jpg');
+    /* background-position: center; */
+    background-size: cover;
+}
+
+.achiDetail
+{
+    height: 100%;
+    width: 50%;
+    background-color: rgb(46, 46, 46);
+    padding: 10px;
+    /* text-align: center; */
+}
+
+.heads
+{
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.info
+{
+    padding: 10px;
+}
+
+.info2
+{
+    padding: 10px;
+    text-align: right;
+}
+
+.achiImg2
+{
+    height: 100%;
+    width: 50%;
+    background-image: url('Media/softball.jpg');
+    /* background-position: center; */
+    background-size: cover;
+}
+
+.one
+{
+    font-weight: bold;
+}
+
+.two
+{
+    font-style: italic;
+}
+
+.bot
+{
+    height: 20vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    /* justify-content: center; */
+    padding: 20px;
+}
+
+.bottom
+{
+    margin-left: 35vw;
+}
+
+.botinfo
+{
+    font-weight: bold;
+    font-size: 130%;
+    text-align: center;
+}
+
+.botinfo2
+{
+    padding: 20px;
+    font-weight: 100;
+    font-size: 100%;
+    text-align: center;
+}
+
+.contact
+{
+    margin-left: 20vw;
+    padding: 10px;
+    text-align: end;
+    /* justify-content: end; */
+}
+
+.four
+{
+    padding-left: 25px;
 }
